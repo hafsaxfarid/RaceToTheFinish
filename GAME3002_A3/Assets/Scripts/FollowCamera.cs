@@ -19,6 +19,7 @@ public class FollowCamera : MonoBehaviour
         Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothSpeed);
         transform.position = smoothedPos;
 
+        // adds a bit of rotation with player movement
         //transform.LookAt(player);
     }
 }
